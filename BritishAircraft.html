@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>British Aircraft</title>
     <style>
         body {
             background-image: url('Poppy field.jpg');
@@ -10,14 +13,8 @@
             background-attachment: fixed;
         }
 
-        h1 {
-            color: white;
-        }
-
-        h2 {
-            color: white;
-        }
-
+        h1,
+        h2,
         h3 {
             color: white;
         }
@@ -25,23 +22,62 @@
         p {
             color: white;
         }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: black;
+        }
     </style>
+</head>
 
 <body>
-    <h1 style="border: 5px solid blue;"><strong>The British aspect of the </strong> </h1>
+    <h1 style="border: 5px">British Aircraft</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="GermanAircraft.html">German Aircraft</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+            <li><a href="pilotStories.html">Pilot Stories</a></li>
+
+        </ul>
+    </nav>
     <p>In this section the history of the Battle of Britain aircraft and pilots will be explored.</p>
     <p>The aircraft used in the Battle of Britain included the British and german aircraft. The British aircraft
         included
         the Spitfire, Hurricane, and Lancaster Bomber. The German aircraft included the Messerschmitt Bf 109 and the
         Heinkel
-        He 111. These aircraft played a crucial role in the outcome of the battle, with the Spitfire and Hurricane being
+        He 111. These aircraft played a crucial role in the outcome of the battle, with the Spitfire and Hurricane
+        being
         particularly effective in defending against German attacks.
     </p>
     <!--place the infomation underneath the images now on their own page-->
-    <img src="Lancaster Bomber.png" alt="Lancaster Bomber" width="210" height="100">
-    <img src="Hawker Hurricane.png" alt="Hawker Hurricane" width="210" height="100">
-    <img src="Dakota.jpg" alt="Spitfire" width="210" height="100">
-    <img src="Spitfire.png" alt="Spitfire" width="210" height="100">
+    <img src="Lancaster Bomber.png" alt="Lancaster Bomber" width="350" height="250">
+    <img src="Hawker Hurricane.png" alt="Hawker Hurricane" width="350" height="250">
+    <img src="Dakota.jpg" alt="Spitfire" width="350" height="250">
+    <img src="Spitfire.png" alt="Spitfire" width="350" height="250">
 
 
     <p> links to site with more information
@@ -49,8 +85,13 @@
             about
             the Spitfire</a>
     </p>
+
     </head>
 </body>
+
+
+
+
 
 </html>
 <footer>

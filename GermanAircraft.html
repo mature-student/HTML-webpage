@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Aircraft</title>
     <style>
         body {
             background-image: url('Poppy field.jpg');
@@ -10,38 +13,66 @@
             background-attachment: fixed;
         }
 
-        h1 {
-            color: white;
-        }
-
-        h2 {
-            color: white;
-        }
-
+        h1,
+        h2,
         h3 {
             color: white;
         }
 
-        p {
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
             color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: black;
         }
     </style>
+</head>
 
 <body>
-    <h1 style="border: 5px solid white;"><strong>The German aircraft </strong></h1>
+    <h1 style="border: 5px;">The German aircraft</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="BritishAircraft.html">British Aircraft</a></li>
+            <li><a href="pilotStories.html">Pilot Stories</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- https://www.historyhit.com/key-german-aircraft-of-world-war-two/ -->
     <p>
-        <!--https://www.historyhit.com/key-german-aircraft-of-world-war-two/-->
-        <img src="Focke-Wulf FW 190.png" alt="Focke-Wulf FW 190" width="210" height="100">
-        <img src="Heinkel He 11.png" alt="Heinkel He 11
-    " width="210" height="100">
-        <img src="Messerschmitt BF109.png" alt="Messerschmitt Bf 109" §width="210" height="100">
-        <img src="Junkers Ju 52.png" alt="Junkers Ju 52" width="210" height="100">
-    <p> The information of each aircraft will be explored in detail covering the specifications and performance of each
+        <img src="Focke-Wulf FW 190.png" alt="Focke-Wulf FW 190" width="300" height="200">
+        <img src="Heinkel He 11.png" alt="Heinkel He 11" width="300" height="200">
+        <img src="Messerschmitt BF109.png" alt="Messerschmitt Bf 109" width="300" height="200">
+        <img src="Junkers Ju 52.png" alt="Junkers Ju 52" width="300" height="200">
+    </p>
+    <p>The information of each aircraft will be explored in detail, covering the specifications and performance of each
         model.</p>
+
+    <footer>
+        <p>Copyright &copy; 2026 Jane Warnes</p>
+    </footer>
 </body>
-<!--place the infomation underneath the images now on their own page-->
 
 </html>
-footer>
-<p>Copyright &copy; 2026 Jane Warnes</p>
-</footer>

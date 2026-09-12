@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilot Stories</title>
     <style>
         body {
             background-image: url('Poppy field.jpg');
@@ -25,16 +29,78 @@
         p {
             color: white;
         }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: blue;
+            border: 5px dashed ridge;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: black;
+        }
     </style>
 </head>
 
 <body>
-    <h1 style="border: 5px solid blue;"><strong>The Pilot Stories</strong> </h1>
+    <h1 style="border: 10px;">The Pilot Stories</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="BritishAircraft.html">British Aircraft</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+            <li><a href="GermanAircraft.html">German Aircraft</a></li>
+        </ul>
+    </nav>
     <h2> This page will include interesting stories about the pilots who fought in the Battle of Britain.</h2>
     <p>The pilots who flew in the Battle of Britain were from various countries, including Britain, Poland, Canada, and
         other allied nations. They played a crucial role in defending their countries against the German Luftwaffe.</p>
     <!--place the infomation underneath the images now on their own page-->
 </body>
+<!--focus asprect for the use of all users-->
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Submit">
+</form>
 
 </html>
 <footer>

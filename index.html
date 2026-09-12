@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
 
 <head>
   <style>
@@ -14,14 +17,8 @@
         fixed;
     }
 
-    h1 {
-      color: white;
-    }
-
-    h2 {
-      color: white;
-    }
-
+    h1,
+    h2,
     h3 {
       color: white;
     }
@@ -29,26 +26,64 @@
     p {
       color: white;
     }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      background-color: black;
+    }
   </style>
 </head>
 
 <body>
-  <div class="banner">
-    <h1 style="border: 5px solid blue;"><strong>Home</strong> </h1>
-    <p>Explore the history of the Battle of Britain and learn about the aircraft and pilots that played a crucial role
-      in this historic event.</p>
-  </div>
-  <ul>
-    <li><a href="BritishAircraft.html">British aspect of the conflict</a></li>
-    <li><a href="GermanAircraft.html">German aspect of the conflict</a></li>
-    <li><a href="pilotStories.html">Pilot Stories</a></li>
-  </ul>
 
-</body>
-</body>
+  <h1 style="border: 10px;">Welcome to The Battle of Britain</h1>
+  <nav>
+    <ul>
+      <li><a href="GermanAircraft.html">German Aircraft</a></li>
+      <li><a href="BritishAircraft.html">British Aircraft</a></li>
+      <li><a href="pilotStories.html">Pilot Stories</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <p>Welcome to my website dedicated to exploring the fascinating world of aircraft and the brave pilots who flew them
+    during World War II. Here, you will find detailed information about German and British aircraft, as well as
+    captivating stories from the pilots themselves. Whether you're an aviation enthusiast or simply curious about
+    history, there's something here for everyone. Dive in and learn more about the incredible machines and the
+    courageous individuals who took to the skies.</p>
+  <img src="Eastbourne.png" alt="Lancaster Bomber" width="700" height="300">
+
+  <!--dropdown access for the content on the website-->
 
 
-</html>
-<footer>
-  <p>Copyright &copy; 2026 Jane Warnes</p>
-</footer>
+
+  <footer>
+    <p>Copyright &copy; 2026 Jane Warnes</p>
+  </footer>
