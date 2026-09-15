@@ -82,6 +82,10 @@
             <li><a href="BritishAircraft.html">British Aircraft</a></li>
             <li><a href="contact us.html">Contact Us</a></li>
             <li><a href="GermanAircraft.html">German Aircraft</a></li>
+            <form>
+                <label for="gsearch">Search Google:</label>
+                <input type="search" id="gsearch" name="gsearch">
+            </form>
         </ul>
     </nav>
     <h2> This page will include interesting stories about the pilots who fought in the Battle of Britain.</h2>
@@ -89,18 +93,10 @@
         other allied nations. They played a crucial role in defending their countries against the German Luftwaffe.</p>
     <!--place the infomation underneath the images now on their own page-->
 </body>
-<!--focus asprect for the use of all users-->
-<form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname" name="lastname"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-    <input type="submit" value="Submit">
-</form>
+<h3 style="border: 5px">We would love to hear from you! Please fill out the form below to get in touch with us.</h3>
+<form action="submit_form.php" method="post"></form>
+<<textarea name="message" rows="10" cols="30">
+    </textarea>
 
 </html>
 <footer>
