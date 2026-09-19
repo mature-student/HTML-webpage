@@ -53,6 +53,16 @@
             background-color: black;
         }
     </style>
+    <script>
+        function validate(form) {
+            fail = validateforename(form.Forename.value);
+            fail += validateSurname(form.Surname.value);
+            fail += validateEmail(form.Email.value);
+            return fail;
+            if (fail == "") return true
+            else { alert(fail); return false }
+        }
+    </script>
 </head>
 
 
@@ -66,372 +76,31 @@
             <li><a href="GermanAircraft.html">German Aircraft</a></li>
         </ul>
     </nav>
-    <form action="submit_form.php" method="post">
-        <form>
-            <label for="gsearch">Search Google:</label>
-            <input type="search" id="gsearch" name="gsearch">
-        </form>
-        <abel for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-    </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <form>
+        <form method="post" action="adduser.php" onsubmit="return validate(this)">
+            <label for="site search">Site search:</label>
+            <input type="search" id="site-search" name="site-search">
+
+            <form action="/action_page.php">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="firstname"><b>Firstname</b></label>
+                    <input type="text" placeholder="Enter your firstname" name=" firstname" required>
+                    <br>
+                    <label for="lastname"><b>Lastname</b></label>
+                    <input type="text" placeholder="Enter your Lastname" name=" firstname" required>
+                    <br>
+                    <label for="Email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter your Email" name=" firstname" required>
+                    <br>
+                    <textarea name="message" rows="10" cols="30">
+                    </textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                    <input type='Reset' value="Reset" `>
+                </fieldset>
+            </form>
+            <script src="bob.js"></script>
 </body>
 
 </html>
