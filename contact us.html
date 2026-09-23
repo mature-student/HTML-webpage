@@ -72,7 +72,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="BritishAircraft.html">British Aircraft</a></li>
-            <li><a href="pilotStories.html">Pilot Stories</a></li>
+            <li><a href="WWIIstories.html">WWII Stories</a></li>
             <li><a href="GermanAircraft.html">German Aircraft</a></li>
         </ul>
     </nav>
@@ -96,8 +96,12 @@
                     <textarea name="message" rows="10" cols="30">
                     </textarea>
                     <br>
-                    <input type="submit" value="Submit">
-                    <input type='Reset' value="Reset" `>
+                    <button id="Contact">Contact</button>
+                    <script>
+                        document.getElementById("Contact").addEventListener("click", function () {
+                            alert("Thank you for visting");
+                        });
+                    </script>
                 </fieldset>
             </form>
             <script src="bob.js"></script>
